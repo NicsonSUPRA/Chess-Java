@@ -17,7 +17,7 @@ public class Piece {
         position = null;
     }
     
-    public Board getBoard(){
+    protected Board getBoard(){
         return board;
     }
 }
