@@ -4,6 +4,8 @@
 
 package com.mycompany.chessproject.aplication;
 
+import com.mycompany.chessproject.aplication.boardgame.Position;
+
 /**
  *
  * @author nicsondev
@@ -11,6 +13,7 @@ package com.mycompany.chessproject.aplication;
 public class ChessProject {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Position position = new Position(3, 5);
+        System.out.println(position);
     }
 }
