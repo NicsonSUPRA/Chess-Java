@@ -5,6 +5,8 @@
 package com.mycompany.chessproject.aplication.chess;
 
 import com.mycompany.chessproject.aplication.boardgame.Board;
+import com.mycompany.chessproject.aplication.boardgame.Position;
+import com.mycompany.chessproject.aplication.pieces.Rock;
 
 /**
  *
@@ -15,6 +17,7 @@ public class ChessMatch {
     
     public ChessMatch() {
         board = new Board(8, 8);
+        initialSetup();
     }
     
     public ChessPiece[][] getPieces(){
@@ -25,5 +28,9 @@ public class ChessMatch {
             }
         }
         return mat;
+    }
+    
+    private void initialSetup(){
+        board.placePiece(new Rock(board, Color.WHITE), new Position(0, 4));
     }
 }

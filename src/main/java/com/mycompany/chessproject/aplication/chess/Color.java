@@ -8,6 +8,12 @@ package com.mycompany.chessproject.aplication.chess;
  *
  * @author nicsondev
  */
-public class Color {
-    
+//public class Color {
+//    
+//}
+
+public enum Color {
+        WHITE,
+        BLACK
+        
 }
