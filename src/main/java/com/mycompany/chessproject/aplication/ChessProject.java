@@ -8,6 +8,7 @@ import com.mycompany.chessproject.aplication.boardgame.Board;
 import com.mycompany.chessproject.aplication.boardgame.Piece;
 import com.mycompany.chessproject.aplication.boardgame.Position;
 import com.mycompany.chessproject.aplication.chess.ChessPiece;
+import com.mycompany.chessproject.aplication.chess.ChessMatch;
 
 /**
  *
@@ -16,10 +17,7 @@ import com.mycompany.chessproject.aplication.chess.ChessPiece;
 public class ChessProject {
 
     public static void main(String[] args) {
-        Position position = new Position(3, 5);
-        System.out.println(position);
-        Piece pecaTeste = new Piece(new Board(8, 8));
-        ChessPiece pecaDois = (ChessPiece) pecaTeste;
-        pecaDois.equals(args);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
