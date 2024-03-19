@@ -19,6 +19,7 @@ public class ChessProject {
         Position position = new Position(3, 5);
         System.out.println(position);
         Piece pecaTeste = new Piece(new Board(8, 8));
-        ChessP
+        ChessPiece pecaDois = (ChessPiece) pecaTeste;
+        pecaDois.equals(args);
     }
 }
